@@ -35,3 +35,12 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "figaro", "~> 1.2"
+
+gem "capistrano", "~> 3.16"
+gem "capistrano-bundler", "~> 2.0"
+gem "capistrano-passenger", "~> 0.2.1"
+gem "capistrano-rails", "~> 1.6"
+gem "capistrano-rvm", "~> 0.1.2"
+gem "capistrano-figaro-yml", "~> 1.0"
