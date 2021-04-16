@@ -82,5 +82,6 @@ test:
 production:
   <<: *default
   database: spree_production
-  username: spree
+  username: wemarketplace
   password: <%= ENV['SPREE_DATABASE_PASSWORD'] %>
+  host: localhost
