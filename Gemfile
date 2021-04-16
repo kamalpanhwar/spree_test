@@ -44,4 +44,5 @@ gem "capistrano-passenger", "~> 0.2.1"
 gem "capistrano-rails", "~> 1.6"
 gem "capistrano-figaro-yml", "~> 1.0"
 
-gem "capistrano-rbenv", "~> 2.2"
+
+gem "capistrano-rvm", "~> 0.1.2"
