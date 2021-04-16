@@ -1,9 +1,9 @@
 set :branch, 'production'
-set :deploy_to, '/var/www'
+set :deploy_to, '/var/www/wemarketplace'
 
-role :app, %w{ubuntu@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
-role :web, %w{ubuntu@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
-role :db, %w{ubuntu@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
+role :app, %w{deploy_user@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
+role :web, %w{deploy_user@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
+role :db, %w{deploy_user@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
 
 set :ssh_options, {
   keys: %w(~/.ssh/ec2-wemarketplace.pem),
