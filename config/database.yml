@@ -86,4 +86,3 @@ production:
   password: <%= ENV['SPREE_DATABASE_PASSWORD'] %>
   host: <%= ENV['SPREE_DATABASE_HOST'] %>
   port: <%= ENV['SPREE_DATABASE_PORT'] %>
-  host: localhost
