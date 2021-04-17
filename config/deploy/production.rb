@@ -2,8 +2,8 @@ set :branch, 'production'
 set :deploy_to, '/var/www/wemarketplace'
 
 role :app, %w{wemarketplace@18.188.88.97}
-role :web, %w{deploy_user@18.188.88.97}
-role :db, %w{deploy_user@18.188.88.97}
+role :web, %w{wermarketplace@18.188.88.97}
+role :db, %w{wemarketplace@18.188.88.97}
 
 set :ssh_options, {
   keys: %w(~/.ssh/kamal_aws.pem),
