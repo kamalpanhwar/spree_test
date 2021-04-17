@@ -2,17 +2,12 @@ lock '~> 3.16.0'
 
 set :application, 'spree_test'
 set :repo_url, 'git@github.com:kamalpanhwar/spree_test.git'
-set :rbenv_type, :user
+set :rvm_ruby_version, '2.7.2'
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
-
-set :rvm_ruby_version, '2.7.0'
 
 set :passenger_restart_with_touch, true
 
-set :rbenv_type, :user # or :system, depends on your rbenv setup
 # set :rbenv_ruby, File.read('.ruby-version').strip
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-set :rbenv_roles, :all # default value
 set :bundle_without, %w{development test}.join(' ')
 
 

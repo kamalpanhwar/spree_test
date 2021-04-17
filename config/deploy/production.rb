@@ -1,12 +1,12 @@
 set :branch, 'production'
 set :deploy_to, '/var/www/wemarketplace'
 
-role :app, %w{deploy_user@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
-role :web, %w{deploy_user@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
-role :db, %w{deploy_user@ec2-18-219-158-150.us-east-2.compute.amazonaws.com}
+role :app, %w{wemarketplace@18.188.88.97}
+role :web, %w{deploy_user@18.188.88.97}
+role :db, %w{deploy_user@18.188.88.97}
 
 set :ssh_options, {
-  keys: %w(~/.ssh/ec2-wemarketplace.pem),
+  keys: %w(~/.ssh/kamal_aws.pem),
   forward_agent: false,
   auth_methods: %w(publickey password)
 }
